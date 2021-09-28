@@ -21,7 +21,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 */
 Route::post('/reset', 'ResetController@reset');
 Route::get('/balance','BalanceController@show');
-Route::post('/event','EventController@store');
+Route::post('/event','App\Http\Controllers\EventController@store');
+
 
 
 
